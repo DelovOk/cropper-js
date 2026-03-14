@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Cropper</title>
+    <script type="module" src="index.js"></script>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="node_modules/croppr/dist/croppr.css" rel="stylesheet"/>
+    <script src="node_modules/croppr/dist/croppr.js"></script>
 </head>
 <body>
-    <span>You can crop image and download after</span>
+    <p>You can crop image and download after</p>
     <div>
-        <button id="upload-button">Upload image</button>
+        <label for="upload-button" id="upload-label">Upload Image</label>
+        <input type="file" id="upload-button" accept="image/*" hidden>
         <button id="crop-button">Crop image</button>
         <button id="download-button">Download image</button>
+    </div>
+    <div class="cropper-container">
+        <img id="upload-image">
     </div>
 </body>
 </html>

@@ -12,5 +12,8 @@
   "type": "commonjs",
   "devDependencies": {
     "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "croppr": "^2.3.1"
   }
 }
